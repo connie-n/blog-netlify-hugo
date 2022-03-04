@@ -3,7 +3,7 @@ author: Connie
 categories:
 - R
 - package
-- Highcharter
+- Highcharts
 date: "2021-09-22"
 draft: false
 excerpt: This theme has a form-to-email feature built in, thanks to the simple Formspree
@@ -19,28 +19,27 @@ links:
   icon_pack: fab
   name: code
   url: https://github.com/apreshill/bakeoff
-subtitle: An R Package
+subtitle: Highcharter package in R tutorials
 tags:
 - hugo-site
-title: Highcharter
+title: Highcharts for R users
 ---
 
-![Highcharter logo](formspree-logo.png)
-
-## [Highcharter](https://formspree.io) Exploration with Highcharter package.
+## Highcharts Exploration with Highcharter package in R
 
 ---
 
 
-## Highcharter Package 
+### What is Highcharter Package 
 
-Highcharts JavaScript 라이브러리를 위한 패키지. ggplot2와 유사한 방법으로 사용할 수 있도록 만들어져 있다. 상업적, 공공이용은 유로 라이센스를 구매해야 하며, 개인이나 비영리 목적으로는 무료 사용이 가능하다. 
+This is the package for Highcharts JavaScript library.It can be used similarly with ggplot2. It can be used free for personal or non-profit purposes but it should be purchased for commercial or public use. 
 
 > Highcharter is a R wrapper for Highcharts javascript library and its modules.
 
-![](https://wp-assets.highcharts.com/svg/highcharts-logo.png){width=50%}
+![](https://wp-assets.highcharts.com/svg/highcharts-logo.png)
 
-2가지 주요 함수 highchart()와 hchart()가 있다. ggplot2를 사용하는 방법과 유사하여, 이 두 함수를 이용해 차트가 생성되면 다른 요소들을 레이어드 하듯 추가하여 사용하면 된다. 
+There are two main functions, which are highcharter() and hchart(). It can be used similar to ggplot2. Firstly, you can make a main chart with those two function and then add other elements with layering. 
+
 
 two functions:
 - highchart() : This function creates a Highchart chart using htmlwidgets. The widget can be rendered on HTML pages generated from R Markdown, Shiny, or other applications.
@@ -50,22 +49,19 @@ two functions:
 
 
 
+### Introduction 
 
 
-## Introduaction 
-
-Sample dataset : 2020 Kaggle ML & Data Science Survey
-
-[참고링크]
-
-- https://www.highcharts.com/snippets/ \
-- https://www.kaggle.com/nulldata/beginners-guide-to-highchart-visual-in-r \
-- https://www.kaggle.com/henry090/beautiful-structured-exploration-with-highcharts \
+[Reference]
+- https://www.highcharts.com/snippets/ 
+- https://www.kaggle.com/nulldata/beginners-guide-to-highchart-visual-in-r 
+- https://www.kaggle.com/henry090/beautiful-structured-exploration-with-highcharts 
 - https://jkunst.com/highcharter/index.html 
 
 
-```{r}
 
+[Libraries]
+```{r}
 library(data.table)
 library(stringr)
 library(dplyr)
@@ -74,27 +70,19 @@ library(highcharter)
 library(tidytext)
 library(countrycode)
 library(purrr)
-
-
 ```
 
 
+Sample dataset : 2020 Kaggle ML & Data Science Survey
 
-
-
-### 데이터셋
-
-```{r}
+```r
 df<- fread("kaggle_survey_2020_responses.csv", encoding="UTF-8")
-
-df
+df %>% head()
 ```
-
 
 
 ```{r}
 df_answer<- data.table::fread("kaggle_survey_2020_responses.csv", header = FALSE, skip=2, na.strings = '', encoding="UTF-8")
-
 
 questions<- names(data.table::fread("kaggle_survey_2020_responses.csv", encoding="UTF-8", skip = 1, nrow=1))
 
