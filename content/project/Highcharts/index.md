@@ -71,6 +71,7 @@ library(highcharter)
 library(tidytext)
 library(countrycode)
 library(purrr)
+library(readr)
 ```
 
 
@@ -79,7 +80,7 @@ Sample dataset:
 2020 Kaggle ML & Data Science Survey
 
 ```r
-df<- read.table("https://github.com/connie-n/blog/blob/main/content/project/Highcharts/kaggle-survey-2020.zip")
+df<- fread(cmd="https://github.com/connie-n/blog/blob/main/content/project/Highcharts/kaggle_survey_2020_responses.zip")
 
 ```
 
