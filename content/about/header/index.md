@@ -3,8 +3,11 @@
 text_align_right: false
 show_title_as_headline: false
 headline: |
-  Hi, my name is Connie. Nice to meet you.
+  Welcome! 
+  Thanks for stopping by
 ---
 
 <!-- this is a subheadline -->
-This is my blog which articles related to data analytics, machine learning, and deep learning are uploaded. I'm excited to share various topics through this blog. :kr: 
+I'm interested in machine learning, deep learning and artificial intelligence. 
+I hope that I will share many of my projects, including more data science and AI content. 
+
