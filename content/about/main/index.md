@@ -6,7 +6,7 @@ use_featured: false # if false, use most recent by date
 number_categories: 3 # set to zero to exclude
 show_intro: true
 intro: |
-  I'm currently applying for Data Analyst position. I enjoy to suffer diverse R package and create something with R and other program languages. I'm excited to join data competitions and to share many ideas with other users. 
+  I've been enjoying to suffer diverse R package. I am interested in analytics time series data and natural language processing with machine learning and deep learning.    
   
 show_outro: true
 outro: |
