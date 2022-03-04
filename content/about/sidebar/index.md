@@ -10,7 +10,7 @@ link_list:
 - name: R
   url: https://www.rstudio.com/
 - name: Tidyverse
-  https://www.tidyverse.org/
+  url: https://www.tidyverse.org/
 ---
 
 ** index doesn't contain a body, just front matter above.
