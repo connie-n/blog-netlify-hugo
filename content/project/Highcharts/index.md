@@ -80,12 +80,7 @@ Sample dataset:
 2020 Kaggle ML & Data Science Survey
 
 ```r
-df<- fread(cmd="https://github.com/connie-n/blog/blob/main/content/project/Highcharts/kaggle_survey_2020_responses.zip")
-
-```
-
-#df<- fread("kaggle_survey_2020_responses.csv", encoding="UTF-8")
-df %>% head()
+df<- read_csv("https://github.com/connie-n/blog/blob/main/content/project/Highcharts/kaggle_survey_2020_responses.csv.gz")
 ```
 
 
