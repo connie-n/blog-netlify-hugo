@@ -7,10 +7,10 @@ show_social_links: true # specify social accounts in site config
 audio_link_label:  # leave blank to exclude
 link_list_label: "Interests" # bookmarks, elsewhere, etc.
 link_list:
-- name: Knitting
-  url: https://en.wikipedia.org/wiki/Paris
-- name: Travel
-  url: https://en.wikipedia.org/wiki/Paris
+- name: R
+  url: https://www.rstudio.com/
+- name: Tidyverse
+  https://www.tidyverse.org/
 ---
 
 ** index doesn't contain a body, just front matter above.
