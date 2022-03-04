@@ -9,7 +9,7 @@ images:
 - img_main.JPG
 show_action_link: true
 show_social_links: true
-subtitle: Data Analytics, Machine learning, and R
+subtitle: Machine learning, Deep learning, AI
 text_align_left: false
 title: Connie
 type: home
