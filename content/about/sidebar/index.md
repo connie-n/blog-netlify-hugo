@@ -7,12 +7,10 @@ show_social_links: true # specify social accounts in site config
 audio_link_label:  # leave blank to exclude
 link_list_label: "Interests" # bookmarks, elsewhere, etc.
 link_list:
-- name: R
+- name: Knitting
   url: https://en.wikipedia.org/wiki/Paris
-- name: Statistics
-  url: https://statisticsplaybook.tistory.com/category/%EA%B0%9D%EC%9B%90%EC%B9%BC%EB%9F%BC/Connie
-- name: Certificate
-  url: https://en.wikipedia.org/wiki/People
+- name: Travel
+  url: https://en.wikipedia.org/wiki/Paris
 ---
 
 ** index doesn't contain a body, just front matter above.
