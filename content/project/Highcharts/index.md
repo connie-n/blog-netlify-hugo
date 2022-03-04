@@ -52,7 +52,7 @@ two functions:
 ### Introduction 
 
 
-[Reference]
+Reference:
 - https://www.highcharts.com/snippets/ 
 - https://www.kaggle.com/nulldata/beginners-guide-to-highchart-visual-in-r 
 - https://www.kaggle.com/henry090/beautiful-structured-exploration-with-highcharts 
@@ -60,8 +60,9 @@ two functions:
 
 
 
-[Libraries]
-```{r}
+
+Libraries:
+```r
 library(data.table)
 library(stringr)
 library(dplyr)
@@ -73,7 +74,9 @@ library(purrr)
 ```
 
 
-Sample dataset : 2020 Kaggle ML & Data Science Survey
+
+Sample dataset: 
+2020 Kaggle ML & Data Science Survey
 
 ```r
 df<- fread("kaggle_survey_2020_responses.csv", encoding="UTF-8")
