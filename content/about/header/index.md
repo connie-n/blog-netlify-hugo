@@ -4,10 +4,10 @@ text_align_right: false
 show_title_as_headline: false
 headline: |
   Welcome! 
-  Thanks for stopping by
+  
 ---
 
 <!-- this is a subheadline -->
-I'm interested in machine learning, deep learning and artificial intelligence. 
-I hope that I will share many of my projects, including more data science and AI content. 
+Thanks for stopping by. 
+I am a M.S. student interested in data science and artificial intelligence. You can browse this site to learn more about some of my projects in theses subjects, or take a look at my resume. 
 

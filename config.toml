@@ -137,9 +137,9 @@ enableEmoji = true
     url = "/project/"
     weight = 3
   [[menu.header]]
-    name = "Notes"
-    title = "Notes"
-    url = "/notes/"
+    name = "Publications"
+    title = "Publications"
+    url = "/publications/"
     weight = 4
 #  [[menu.header]]
 #    name = "A collection"

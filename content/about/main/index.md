@@ -1,12 +1,12 @@
 ---
 ## Configure page content in wide column
-title: "Who am I?" # leave blank to exclude
+title: "About Me" # leave blank to exclude
 number_featured: 1 # pulling from mainSections in config.toml
 use_featured: false # if false, use most recent by date
 number_categories: 3 # set to zero to exclude
 show_intro: true
 intro: |
-  I've been enjoying to suffer diverse R package. I am interested in analytics time series data and natural language processing with machine learning and deep learning.    
+  I am a M.S. student at Graduate School of Yeonsei University, Seoul, South Korea. My research interests lie at Reinforcement Learning and Natural Language Processing. I have been enjoying to suffer diverse R package and Python library.     
   
 show_outro: true
 outro: |
