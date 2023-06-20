@@ -8,6 +8,7 @@ headline: |
 ---
 
 <!-- this is a subheadline -->
-Thanks for stopping by. 
-I am a M.S. student interested in data science and artificial intelligence. You can browse this site to learn more about some of my projects in theses subjects, or take a look at my resume. 
+Thanks for coming here. 
+I am a M.S. student at data science. 
+I am passionate about using artificial intelligence algorithms to solving business problems and create value. My research interests focus on language models and generative algorithms of Natural Language Processing and multimodal. You can browse this site to explore about my projects or take a look at my resume. 
 
