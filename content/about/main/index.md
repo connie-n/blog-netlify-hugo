@@ -6,7 +6,7 @@ use_featured: false # if false, use most recent by date
 number_categories: 3 # set to zero to exclude
 show_intro: true
 intro: |
-  I am a M.S. student at Graduate School of Yeonsei University, Seoul, South Korea. My research interests lie at Reinforcement Learning and Natural Language Processing. I have been enjoying to suffer diverse R package and Python library.     
+  Thank you for coming here!.     
   
 show_outro: true
 outro: |
