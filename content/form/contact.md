@@ -1,6 +1,6 @@
 ---
 date: "2019-02-25T13:38:41-06:00"
-description: Would you like to contact me? Please send me and email(wongyung68@gmail.com) or use the following form.
+description: Would you like to contact me? Please send me an email(wongyung68@gmail.com) or use the following form.
 draft: false
 formspree_form_id: id-from-formspree
 layout: split-right
