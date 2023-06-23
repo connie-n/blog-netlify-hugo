@@ -141,7 +141,7 @@ kableExtra::kbl(quiz, escape=F) %>%
 ```
 
 
-##How to use Highcharter
+## How to use Highcharter
 
 
 
