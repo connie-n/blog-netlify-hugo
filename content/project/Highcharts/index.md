@@ -84,6 +84,7 @@ df<- read_csv("https://github.com/connie-n/blog/blob/main/content/project/Highch
 ```
 
 
+
 ```{r}
 df_answer<- data.table::fread("kaggle_survey_2020_responses.csv", header = FALSE, skip=2, na.strings = '', encoding="UTF-8")
 
@@ -92,20 +93,13 @@ questions<- names(data.table::fread("kaggle_survey_2020_responses.csv", encoding
 ```
 
 
-sapply : 벡터, 리스트, 표현식, 데이터 프레임 등에 함수를 적용하고 그 결과를 벡터 또는 행렬로 반환한다.
-sapply(
-  X,    # 벡터, 리스트, 표현식 또는 데이터 프레임
-  FUN,  # 적용할 함수
-  ...,  # 추가 인자. 이 인자들은 FUN에 전달된다.
-)
 
-
-### question/answer 구분하기 
+### Divide into question/answer 
 
 
 ```{r}
 length(questions) #355
-seq_len(length(questions)) #숫자형 벡터 반환
+seq_len(length(questions)) #retun int vection
 
 pattern=".*\\?"
 dupl_q<- sapply(seq_len(length(questions)), function(x) str_extract(questions[x], pattern))
@@ -115,8 +109,9 @@ dupl_q<- sapply(seq_len(length(questions)), function(x) str_extract(questions[x]
 
 ### Overview questions 
 
-반복 질문 제거하기
-대체적으로 어떤 질문이 survey에서 활용되고 있는가 살펴보기 
+Remove questions repeated.
+Look at what questions was it used as question in this survey.
+
 
 ```{r}
 quiz<- data.frame(Index= 1:length(dupl_q %>% unique()%>% .[-1]), Questions=dupl_q %>% unique() %>% .[-1])
@@ -154,7 +149,8 @@ kableExtra::kbl(quiz, escape=F) %>%
 
 ### bar chart
 
-기본 차트
+Basic chart.
+
 ```{r}
 df_answer %>%
   select("V3") %>%
@@ -175,7 +171,8 @@ hchart(V3, "bar", hcaes(x="V3", y="n"))
 
 ```
 
-가로세로 바꿔보기
+Chage the width and height
+
 
 ```{r}
 df_answer %>%
@@ -189,7 +186,8 @@ df_answer %>%
 
 
 
-테마 적용해보기
+Appy theme.
+
 ```{r}
 
 # hc_theme() Highcharts is very flexible so you can modify every element of the chart. There are some exiting themes so you can apply style to charts with few lines of code. 
@@ -381,10 +379,11 @@ hchar("item")
 
 ### Area chart - backgraound image   
 
-차트 만드는데에 필요한 테이블 만들기
+Generate the table to make chart
 
-- my_map: 설문조사 응답자의 국가 분포 
-- my_map2: 설문조사 응답자의 position 별 분포  
+- my_map: distribution for survey respondents
+- my_map2: distribution for position of survey respondents
+
 ```{r}
 
 my_map <- df_answer[,c(4,6)] %>%
@@ -410,8 +409,8 @@ my_map2[is.na(my_map2)]<- 0
 
 
 
-국가코드를 사용하여(iso2C) 각 국가랑 매칭되는 flag 이미지 삽입할 준비하기. 
-(countrycode package 사용)
+Prepare to insert image matching the flags with country using country code(iso2C).
+(Used countrycode package)
 
 
 ```{r}
@@ -451,7 +450,7 @@ my_map2<- my_map2%>% #countrycode package
 ```
 
 
-tooltip table 만들어주기 
+Generate tooltip table 
 
 ```{r}
 
@@ -473,7 +472,7 @@ tt
 ```
 
 
-areachart 만들기
+Generate areachart
 
 ```{r}
 
@@ -516,5 +515,3 @@ hchart(my_map2, "areaspline",
 ```
 
 
-
-```

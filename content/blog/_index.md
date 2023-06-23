@@ -16,10 +16,10 @@ show_author_byline: true
 show_post_date: true
 show_post_thumbnail: true
 sidebar:
-  author: The R Markdown Team @RStudio
-  description: "This is a place where I practice sharing my curiosity about machine learning and deep learning. It includes simple notes and tutorials for programming language R and Python."
+  author: 
+  description: "This is a place where I write or share articles about machine learning and deep learning. It includes simple notes and tutorials for programming language R and Python."
   show_sidebar_adunit: true
-  text_link_label: Subscribe via RSS
+  text_link_label: 
   text_link_url: /index.xml
   title: Blog
 thumbnail_left: true
