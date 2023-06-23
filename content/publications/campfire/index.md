@@ -1,9 +1,9 @@
 ---
 author: Connie
 categories:
-- workshop
-date: "2021-01-12"
-date_end: "2021-01-13"
+- publication
+date: 
+date_end: 
 draft: false
 event: 
 event_url: 
@@ -19,10 +19,19 @@ links:
   icon_pack: fab
   name: code
   url: 
-location: Sydney, Australia
+location: Korea 
 show_post_time: false
-subtitle: Testing
-title: This is a test
+subtitle: Journal of The Korea Society of Computer and Information
+title: Text summarization of dialogue based on BERT
 ---
 
-This is a test to set up my blog. 
+
+Highlight
+
+- propose how to implement text summaries for colloquial data that are not clearly
+organized. 
+- For this study, SAMSum data, which is colloquial data, was used, and the BERTSumExtAbs
+model proposed in the previous study of the automatic summary model was applied. 
+- Through this study, the performance of colloquial generation summary has been proven, and it is hoped that the computer will understand human natural language as it is and be used as basic data to solve various tasks.
+
+▸Key words : Text Mining, BERT, Text Summarization, Abstractive Summarization, Dialogue Data
