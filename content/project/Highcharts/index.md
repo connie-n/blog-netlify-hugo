@@ -85,7 +85,7 @@ df<- read_csv("https://github.com/connie-n/blog/blob/main/content/project/Highch
 
 
 
-```{r}
+```r
 df_answer<- data.table::fread("kaggle_survey_2020_responses.csv", header = FALSE, skip=2, na.strings = '', encoding="UTF-8")
 
 questions<- names(data.table::fread("kaggle_survey_2020_responses.csv", encoding="UTF-8", skip = 1, nrow=1))
@@ -97,7 +97,7 @@ questions<- names(data.table::fread("kaggle_survey_2020_responses.csv", encoding
 ### Divide into question/answer 
 
 
-```{r}
+```r
 length(questions) #355
 seq_len(length(questions)) #retun int vection
 
@@ -113,7 +113,7 @@ Remove questions repeated.
 Look at what questions was it used as question in this survey.
 
 
-```{r}
+```r
 quiz<- data.frame(Index= 1:length(dupl_q %>% unique()%>% .[-1]), Questions=dupl_q %>% unique() %>% .[-1])
 
 
@@ -142,7 +142,7 @@ kableExtra::kbl(quiz, escape=F) %>%
 ```
 
 
-##How to use Highcharter
+## How to use Highcharter
 
 
 
@@ -151,7 +151,7 @@ kableExtra::kbl(quiz, escape=F) %>%
 
 Basic chart.
 
-```{r}
+```r
 df_answer %>%
   select("V3") %>%
   count(V3) %>%
@@ -174,7 +174,7 @@ hchart(V3, "bar", hcaes(x="V3", y="n"))
 Chage the width and height
 
 
-```{r}
+```r
 df_answer %>%
   select("V3") %>%
   count(V3) %>%
@@ -188,7 +188,7 @@ df_answer %>%
 
 Appy theme.
 
-```{r}
+```r
 
 # hc_theme() Highcharts is very flexible so you can modify every element of the chart. There are some exiting themes so you can apply style to charts with few lines of code. 
 # hc_add_theme()
@@ -231,7 +231,7 @@ df_answer %>%
 ### word cloud
 
 
-```{r}
+```r
 
 #Q27 Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? 
 
@@ -273,7 +273,7 @@ hchart(list_products, "wordcloud", hcaes(name= products, weight=n)) %>%
 
 ### Treemap
 
-```{r}
+```r
 
 #Q16 Which of the following machine learning frameworks do you use on a regular basis?
 
@@ -298,7 +298,7 @@ df_answer %>%
 ### sunburst chart
 
 
-```{r}
+```r
 sunburst_fun = function(df_answer, col1, col2, col3, cols_names){
   data<- df_answer %>%
     mutate(V4 = ifelse(V4 == "United States of America", "USA", paste(V4))) %>%
@@ -350,7 +350,7 @@ data2 = df_answer %>%
 
 ### Icons Plot
 
-```{r}
+```r
 
 df_answer %>% 
   select(V3) %>%
@@ -384,7 +384,7 @@ Generate the table to make chart
 - my_map: distribution for survey respondents
 - my_map2: distribution for position of survey respondents
 
-```{r}
+```r
 
 my_map <- df_answer[,c(4,6)] %>%
   count(V4, sort=TRUE) %>% #If TRUE, will show the largest groups at the top.
@@ -413,7 +413,7 @@ Prepare to insert image matching the flags with country using country code(iso2C
 (Used countrycode package)
 
 
-```{r}
+```r
 
 #원래 flag 이미지 링크: 
 urlicon<- "url(https://raw.githubusercontent.com/tugmaks/flags/2d15d1870266cf5baefb912378ecfba418826a79/flags/flags-iso/flat/24/%s.png)"
@@ -452,7 +452,7 @@ my_map2<- my_map2%>% #countrycode package
 
 Generate tooltip table 
 
-```{r}
+```r
 
 ttvars <- colnames(my_map2)[c(2:15)]
 
@@ -474,7 +474,7 @@ tt
 
 Generate areachart
 
-```{r}
+```r
 
 urlimg <- "https://cdn.theatlantic.com/thumbor/_ChTd-1YYOiMmlKu2z6AMwxeFpk=/499x0:2500x2001/1080x1080/media/img/mt/2015/09/intern-2/original.jpg"
 
