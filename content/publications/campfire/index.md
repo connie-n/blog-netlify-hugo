@@ -14,7 +14,7 @@ links:
 - icon: door-open
   icon_pack: fas
   name: website
-  url:"https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11120614
+  url:https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11120614
 - icon: github
   icon_pack: fab
   name: code
