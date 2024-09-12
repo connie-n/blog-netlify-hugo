@@ -24,3 +24,7 @@ Highlight
 - Through this study, the performance of colloquial generation summary has been proven, and it is hoped that the computer will understand human natural language as it is and be used as basic data to solve various tasks.
 
 ▸Key words : Text Mining, BERT, Text Summarization, Abstractive Summarization, Dialogue Data
+
+
+Link:
+[Publication Link]("https://daringfireball.net/projects/markdown/syntax")
