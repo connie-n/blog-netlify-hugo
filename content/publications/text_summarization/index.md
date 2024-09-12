@@ -26,5 +26,4 @@ Highlight
 ▸Key words : Text Mining, BERT, Text Summarization, Abstractive Summarization, Dialogue Data
 
 
-Link:
-[Publication Link]("https://daringfireball.net/projects/markdown/syntax")
+[Link]("https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11120614")
