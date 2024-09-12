@@ -11,7 +11,7 @@ cascade:
     text_link_label: View recent talks
     text_link_url: /talk/
 description: |
-  This is a place for publication. 
+  This is a place to introduce published papers. 
 layout: list
 show_author_byline: true
 show_post_date: true

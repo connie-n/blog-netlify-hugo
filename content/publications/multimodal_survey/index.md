@@ -2,7 +2,7 @@
 author: Connie
 categories:
 - publication
-date: 
+date: 2023
 date_end: 
 draft: false
 event: 

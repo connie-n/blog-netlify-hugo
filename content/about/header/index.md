@@ -9,6 +9,7 @@ headline: |
 
 <!-- this is a subheadline -->
 Thanks for coming here. 
-I am a M.S. student in data science. 
-I am passionate about using artificial intelligence algorithms to solving business problems and create value. My research interests focus on language models and generative algorithms of Natural Language Processing and multimodal. You can browse this site to explore about my projects or take a look at my resume. 
+I recently completed my M.S. degree in Data Science, and I am passionate about applying artificial intelligence algorithms to solve business problems and create value. My research interests focus on language models, generative algorithms in Natural Language Processing, and multimodal learning. I’m eager to continue exploring and contributing to the ML/AI industry. 
+Feel free to browse this site to explore my projects or check out my resume.
+
 

@@ -9,7 +9,7 @@ images:
 - img_main.JPG
 show_action_link: true
 show_social_links: true
-subtitle: I am a M.S. student in Data Science. 
+subtitle: Welcome to my blog. 
 text_align_left: false
 title: Connie
 type: home
