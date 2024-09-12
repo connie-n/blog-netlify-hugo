@@ -10,15 +10,6 @@ event_url:
 excerpt: 2022 Vo.27 No.8, Journal of the Korea society of computer and information. 
 featured: true
 layout: single
-links:
-- icon: door-open
-  icon_pack: fas
-  name: website
-  url:https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11120614
-- icon: github
-  icon_pack: fab
-  name: code
-  url: 
 location: Korea 
 show_post_time: false
 subtitle: Journal of The Korea Society of Computer and Information
