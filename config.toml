@@ -141,6 +141,11 @@ enableEmoji = true
     title = "Publications"
     url = "/publications/"
     weight = 4
+  [[menu.header]]
+    name = "Resume"
+    title = "Resume"
+    url = "/resume/CV.pdf"
+    weight = 4
 #  [[menu.header]]
 #    name = "A collection"
 #    title = "A collection"
